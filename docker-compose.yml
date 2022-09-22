@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  # This is the hostname to proxy to
+  app:
+    build:
+      context: ./app
+  nginx:
+    build: 
+      context: ./nginx
+    ports:
+      - "80:80"
